@@ -1,19 +1,21 @@
 Tools to adjust monitor and keyboard brightness on Macbook air:
 
-  brightness --set <percentage>
+keyboardLight: controls the keyboard backlight intensity
+displayLight: controls the monitor intensity
+
+
+Usage:
+  light --set <percentage>
     - sets brightness to specified percentage
 
-  brightness --increment
+  light --increment
     - increments current brightness by 10% (should take ten calls to go from
       empty to full)
 
-  brightness --decrement
+  light --decrement
     - decrements current brightness by 10% (should take ten calls to go from
       full to empty)
 
-Two tools:
-  keyboardLight: controls the keyboard backlight intensity
-    cc keyboardLight.c brightnessLib.c -o keyboardLight
 
-  displayLight: controls the monitor intensity
-    cc displayLight.c brightnessLib.c -o displayLight
+Build Instructions:
+  make
