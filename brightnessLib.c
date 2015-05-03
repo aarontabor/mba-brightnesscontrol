@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "brightnessLib.h"
+
 
 int getBrightnessPercentage(char *deviceDirectory) {
   char currentBrightnessFilename[128], maxBrightnessFilename[128];
