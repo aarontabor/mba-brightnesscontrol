@@ -19,3 +19,9 @@ Usage:
 
 Build Instructions:
   make
+
+
+** tools must be run as root (or privilidged) user since they are accessing
+device files. To allow usage by a normal user, invoke the following script from
+the project directory after a successful build:
+  ./allowNormalUserAccess

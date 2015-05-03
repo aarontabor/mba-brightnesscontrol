@@ -1,0 +1,4 @@
+#!/bin/sh
+
+chown root keyboardLight displayLight
+chmod u+s keyboardLight displayLight
