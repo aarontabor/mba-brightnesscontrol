@@ -14,9 +14,7 @@ int main(int argc, char *argv[]) {
 
   char *option = argv[1];
   if (strcmp(option, "--increment") == 0) {
-  printf("before\n");
     doIncrement(brightnessPercentage);
-  printf("after\n");
   } else if (strcmp(option, "--decrement") == 0) {
     doDecrement(brightnessPercentage);
   } else if (strcmp(option, "--set") == 0) {
