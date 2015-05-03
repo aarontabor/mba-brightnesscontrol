@@ -1,0 +1,12 @@
+Tools to adjust monitor and keyboard brightness on Macbook air:
+
+  brightness --set <percentage>
+    - sets brightness to specified percentage
+
+  brightness --increment
+    - increments current brightness by 10% (should take ten calls to go from
+      empty to full)
+
+  brightness --decrement
+    - decrements current brightness by 10% (should take ten calls to go from
+      full to empty)
