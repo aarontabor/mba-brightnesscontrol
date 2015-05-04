@@ -12,12 +12,9 @@ int getBrightnessPercentage(char *deviceDirectory) {
 
   sprintf(currentBrightnessFilename, "%s/%s", deviceDirectory, "brightness");
   sprintf(maxBrightnessFilename, "%s/%s", deviceDirectory, "max_brightness");
-
   currentBrightness = readInteger(currentBrightnessFilename);
   maxBrightness = readInteger(maxBrightnessFilename);
-
   currentPercentage = (currentBrightness*100) / maxBrightness;
-  printf("[INFO] current brightness percentage: %d\n", currentPercentage);
   return currentPercentage;
 }
 
@@ -27,11 +24,8 @@ int setBrightnessPercentage(char *deviceDirectory, int percentage) {
 
   sprintf(currentBrightnessFilename, "%s/%s", deviceDirectory, "brightness");
   sprintf(maxBrightnessFilename, "%s/%s", deviceDirectory, "max_brightness");
-
   maxBrightness = readInteger(maxBrightnessFilename);
-
   newBrightness = (maxBrightness*percentage) / 100;
-  printf("[INFO] writing brightness value: %d\n", newBrightness);
   writeInteger(currentBrightnessFilename, newBrightness);
   return 0;
 }
